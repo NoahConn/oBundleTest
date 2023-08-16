@@ -77,3 +77,59 @@
 // -----------------------------------------------------------------------------
 
 @import "layouts/layouts"; // 1
+
+/* DEFAULT: show the primary image and hide secondary image */
+.card-figure .primary-image {
+  display: block;
+}
+
+.card-figure .secondary-image {
+  display: none;
+}
+
+/* ON HOVER: hide the primary image and show secondary image */
+.card-figure:hover .primary-image {
+  display: none;
+}
+
+.card-figure:hover .secondary-image {
+  display: block;
+}
+
+/* ADD ALL BUTTON */
+
+#cartButtonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#removeAllItems {
+  display: none;
+}
+
+/* customer banner */
+.customer-banner {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-email {
+  margin-bottom: 10px;
+}
+
+.welcome-message {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+

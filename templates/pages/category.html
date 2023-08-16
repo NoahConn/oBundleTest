@@ -30,6 +30,21 @@ category:
     {{{region name="category_below_header"}}}
 {{/unless}}
 {{{category.description}}}
+{{#if customer}}
+<div class="customer-banner">
+  <div class="customer-info">
+    <p class="welcome-message">Welcome back, {{customer.name}}!</p>
+    <div class="phone-email">
+      <div>Email: {{customer.email}}</div>
+      <div>Phone: {{customer.phone}}</div>
+    </div>
+  </div>
+</div>
+{{/if}}
+<div id="cartButtonsContainer">
+  <button id="addAllToCart" class="button">Add All To Cart</button>
+  <button id="removeAllItems" class="button">Remove All Items</button>
+</div>
 <div class="page">
     {{#if category.faceted_search_enabled}}
         <aside class="page-sidebar" id="faceted-search-container">
@@ -46,7 +61,6 @@ category:
             </aside>
         {{/if}}
     {{/if}}
-
     <div class="page-content" id="product-listing-container">
         {{> components/category/product-listing}}
         {{{region name="category_below_content"}}}
