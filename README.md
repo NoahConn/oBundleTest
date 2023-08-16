@@ -1,5 +1,8 @@
 # Noah Connolly oBundle Test
 
+URL: https://noah-connolly.mybigcommerce.com/?ctk=66e24f09-511b-4ba0-8f3d-c3ea6bf97b63
+Code: nwcemvpteb
+
 After setting up my store and Stencil CLI, I created the Special Item product on the admin dashboard.
 
 ## Secondary Image on Hover:
